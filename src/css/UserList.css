@@ -1,0 +1,57 @@
+.user-list {
+    background-image: url(../assets/background.png);
+    min-height: 80vh;
+}
+
+.userButton,
+.newUserButton {
+    background-color: #e2e2c3;
+    width: stretch;
+    height: auto;
+    margin-bottom: .3125rem;
+    font-size: .875rem;
+    color: #898989;
+    border: none;
+    border-radius: .3125rem;
+    padding: .625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.newUserButton {
+    color: black;
+    width: 20%;
+    border: .125rem;
+    border-color: #898989;
+
+}
+
+.userButton:hover, 
+.newUserButton:hover{
+    opacity: 0.9;
+    background-color: #acc448;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .user-list table {
+        font-size: .75rem;
+    }
+
+    .userButton,
+    .newUserButton {
+        width: 100%;
+        margin-bottom: 0.3125rem;
+        font-size: .875rem;
+    }
+}
+
+@media (min-width: 577px) {
+    Table {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+}

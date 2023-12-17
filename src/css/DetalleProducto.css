@@ -1,0 +1,269 @@
+.detalle-producto {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 1.25rem;
+    height: 80vh;
+    width: 100%;
+    cursor: auto;
+}
+
+.detalle-images {
+    width: 45vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main_image {
+    display: flex;
+    height: auto;
+}
+
+.main_image img {
+    border-radius: 5%;
+    margin-right: 1.25rem;
+    border: .125rem solid #eee;
+    padding: .1875rem;
+}
+
+.thumbnail_images {
+    list-style: none;
+    padding: .9375rem;
+    border-radius: 5%;
+}
+
+.thumbnail_images ul {
+    list-style: none;
+    display: list-item;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail_images img {
+    cursor: pointer;
+    border: .125rem solid #eee;
+    padding: .1875rem;
+    transition: all 0.3s;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 10%;
+    margin-bottom: .3125rem;
+}
+
+.thumbnail_images li img:hover {
+    border-color: #333;
+}
+
+.detalle-info {
+    width: 40vw;
+    height: auto;
+    padding: 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detalle-nombre {
+    font-size: 1.5rem;
+    margin-bottom: .625rem;
+}
+
+.detalle-precio {
+    font-size: 1.125rem;
+    margin-bottom: .625rem;
+}
+
+.detalle-descripcion {
+    margin-bottom: .625rem;
+}
+
+.detalle-composicion {
+    margin-bottom: 1.25rem;
+}
+
+.detalle-talles {
+    margin-bottom: 1.25rem;
+}
+
+.talle-buttons {
+    display: flex;
+    gap: .625rem;
+}
+
+.talle-button {
+    border: none;
+    padding: .5rem .75rem;
+    cursor: pointer;
+    background-color: #ccc;
+    font-size: .875rem;
+    color: #898989;
+}
+
+.talle-button.selected {
+    background-color: white;
+    color: #898989;
+    border: .0625rem solid black;
+}
+
+.boton-comprar {
+    background-color: #e2e2c3;
+    font-size: .875rem;
+    color: #898989;
+    border: none;
+    border-radius: .3125rem;
+    width: min-content;
+    padding: .625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+    opacity: 0.9;
+    background-color: #acc448;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boton-comprar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.detalle-images {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5rem;
+    gap: 1.875rem;
+}
+
+.main_image img {
+    width: 18.75rem;
+    height: auto;
+    border-radius: 5%;
+    border: .0625rem solid #eee;
+    padding: 0.125rem;
+    margin-bottom: .625rem;
+}
+
+.thumbnail_images {
+    padding: 0.625rem;
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+.thumbnail_images img {
+    width: auto;
+    height: 8.75rem;
+    border-radius: 5%;
+    margin-right: .3125rem;
+}
+
+.detalle-info {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-left: 5rem;
+    gap: 1.875rem;
+}
+
+.detalle-nombre {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+}
+
+.detalle-precio {
+    font-size: .875rem;
+    margin-bottom: .5rem;
+}
+
+.talle-buttons {
+    gap: .5rem;
+}
+
+.talle-button {
+    padding: .375rem .625rem;
+    font-size: .875rem;
+    margin-bottom: .1875rem;
+}
+
+.boton-comprar {
+    padding: 0.5rem 1rem;
+    font-size: .875rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .thumbnail_images li {
+        list-style: none;
+    }
+
+    .detalle-producto {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .detalle-producto {
+        height: 100%;
+        width: 100%;
+        padding: .625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .detalle-images {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        gap: 1.875rem;
+    }
+
+    .main_image img {
+        width: 75%;
+        height: auto;
+        border-radius: 5%;
+        border: .0625rem solid #eee;
+        padding: 0.125rem;
+        margin-bottom: .625rem;
+    }
+
+    .thumbnail_images li {
+        list-style: none;
+        padding: 0;
+        border-radius: 5%;
+        width: auto;
+        height: auto;
+    }
+
+    .detalle-info {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        padding-left: 5rem;
+        gap: 1.875rem;
+    }
+
+}

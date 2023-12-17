@@ -1,3 +1,23 @@
+* {
+  font-family: 'Montserrat', 'Tajawal', 'Geologica';
+}
+
+* a {
+  text-decoration: none !important;
+  color: black;
+}
+
+* a:hover {
+  text-decoration: none;
+  color: #acc448 !important;
+  font-weight: bold;
+}
+
+* a:active {
+  color: #819531;
+  text-decoration: none
+}
+
 .App {
   text-align: center;
 }
@@ -20,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(6.875rem + 2vmin);
   color: white;
 }
 
@@ -32,7 +52,23 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  * {
+
+    overflow: 1;
+    max-width: auto;
+
+  }
+  .navbar-expand {
+      flex-wrap: wrap;
+  }
+  .enlace {
+  font-size:  .75rem !important;
+}
 }

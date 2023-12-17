@@ -1,0 +1,153 @@
+.footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-ul li {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    font-size: .75rem;
+    background-color: white;
+    color: black;
+    line-height: 2;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ft-title {
+    color: black;
+    font-size: 1rem;
+    padding-bottom: 0.625rem;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.ft-main {
+    padding: 1.25rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+}
+
+@media only screen and (min-width: 29.8125rem) {
+    
+.footer-ul {
+    list-style: none;
+}
+
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .ft-main {
+        justify-content: space-between;
+    }
+
+    
+.footer-ul li {
+    list-style: none;
+}
+}
+
+@media only screen and (min-width: 77.5rem) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.suscribe {
+    border: .0313rem solid #c9c9c9;
+    background-color: transparent;
+    border-radius: .3125rem;
+}
+
+.susButton {
+    background-color: #e2e2c3;
+    font-size: .875rem;
+    color: #898989;
+    border: none;
+    border-radius: .3125rem;
+    padding: .625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.susButton:hover {
+    opacity: 0.9;
+    background-color: #acc448;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: whitesmoke;
+}
+
+.ft-legal-list {
+    
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    
+    list-style: none;
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .ft-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .ft-main-item {
+        width: 10vw;
+        position: relative;
+    }
+}
+
+form {
+    gap: 1.25rem;
+}

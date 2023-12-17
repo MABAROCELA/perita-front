@@ -1,0 +1,49 @@
+.producto-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    border: .0625rem solid #ccc;
+    border-radius: .3125rem;
+    padding: .625rem;
+}
+
+.producto-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 6.875rem;
+}
+
+.card-info {
+    text-align: justify;
+    width: 100%;
+    font-size: .75rem;
+    text-decoration: none;
+}
+
+
+.card-title {
+    font-size: .75rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-detalles {
+    width: 100%;
+    background-color: #e2e2c3;;
+    font-size: .875rem;
+    color: #898989;
+    border: none;
+    border-radius: .3125rem;
+    padding: .625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-detalles:hover {
+    opacity: 0.9;
+    background-color: #acc448;
+    color: #ffffff;
+    font-weight: bold;
+}

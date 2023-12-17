@@ -1,0 +1,52 @@
+.icono {
+    fill: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icono:hover {
+    opacity: 0.9;
+    fill: #acc448;
+}
+
+.logo-perita {
+    margin-left: 1.25rem;
+    width: 2.5rem;
+    height: auto;
+}
+
+
+@media (min-width: 100px) and (max-width: 550px) {
+    .logo-perita{
+        width: 2.5rem !important;
+    }
+    .rrss {
+        width: .625rem;;
+        height: .625rem;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-perita {
+        width: 2.5rem;
+        margin-left: 0;
+    }
+
+    .rrss {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-perita {
+        width: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-perita {
+        min-width: 4.375rem;
+    }
+}
