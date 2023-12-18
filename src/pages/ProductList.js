@@ -43,7 +43,7 @@ const Products = () => {
         const URL_BACK = process.env.REACT_APP_BACK_URL;
 
         try {
-            const response = await axios.delete(`${URL_BACK}/delete/${productId}`);
+            const response = await axios.delete(`${URL_BACK}/products/delete/${productId}`);
             const { success, message } = response.data;
 
             if (success) {
@@ -79,7 +79,7 @@ const Products = () => {
         const URL_BACK = process.env.REACT_APP_BACK_URL;
 
         try {
-            const response = await axios.put(`${URL_BACK}/edit/${editedProduct._id}`, {
+            const response = await axios.put(`${URL_BACK}/products/edit/${editedProduct._id}`, {
                 nombre: editedProduct.nombre,
                 precio: editedProduct.precio,
                 descripcion: editedProduct.descripcion,

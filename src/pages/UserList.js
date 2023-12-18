@@ -42,7 +42,7 @@ const Usuarios = () => {
     const handleDelete = async (userId) => {
 
         try {
-            const response = await axios.delete(`${URL_BACK}/delete/${userId}`);
+            const response = await axios.delete(`${URL_BACK}/users/delete/${userId}`);
             const { success, message } = response.data;
 
             if (success) {
@@ -69,7 +69,7 @@ const Usuarios = () => {
     const handleUpdateUser = async () => {
 
         try {
-            const response = await axios.put(`${URL_BACK}/edit/${editedUser._id}`, {
+            const response = await axios.put(`${URL_BACK}/users/edit/${editedUser._id}`, {
                 username: editedUser.username,
                 password: editedUser.password,
                 email: editedUser.email,
