@@ -29,7 +29,7 @@ function NewUser() {
 
                 console.log('Respuesta del servidor:', response);
 
-            if (response.status === 200) {
+            if (response.status === 201) {
                 console.log('Usuario creado con exito');
                 alert('Usuario creado con exito');
                 navigate('/users/login');
