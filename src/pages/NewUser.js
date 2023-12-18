@@ -12,7 +12,8 @@ function NewUser() {
 
     const navigate = useNavigate();
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
         const URL_BACK = process.env.REACT_APP_BACK_URL;
 
@@ -27,8 +28,8 @@ function NewUser() {
                 });
 
             if (response.status === 200) {
+                console.log('Usuario creado con exito');
                 alert('Usuario creado con exito');
-                console.log(response);
                 navigate('/users/login');
 
                 setUsername('');
@@ -102,7 +103,7 @@ function NewUser() {
                             {error && <div className="register-error-message">{error}</div>}
                             <button
                                 className="register-button"
-                                type="button"
+                                type="submit"
                                 onClick={handleSubmit}>
                                 Registrarse
                             </button>

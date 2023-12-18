@@ -36,7 +36,7 @@ const apiKey = process.env.REACT_APP_API_KEY || '20c22ef6650cb4f6045118d00308566
     };
 
     fetchWeatherData();
-  }, []);
+  }, [apiKey]);
 
   if (!city || !temperature || !weatherDescription || !weatherIcon) {
     return <div>Cargando...</div>;

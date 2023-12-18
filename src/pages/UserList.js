@@ -37,7 +37,7 @@ const Usuarios = () => {
 
     useEffect(() => {
         getUsers();
-    }, []);
+    }, [getUsers]);
 
     const handleDelete = async (userId) => {
 

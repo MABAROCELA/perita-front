@@ -36,7 +36,7 @@ const Products = () => {
 
     useEffect(() => {
         getProducts();
-    }, []);
+    }, [getProducts]);
 
     const handleDelete = async (productId) => {
 
