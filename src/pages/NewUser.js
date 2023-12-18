@@ -35,6 +35,10 @@ function NewUser() {
                 setUsername('');
                 setPassword('');
                 setEmail('');
+
+            } else {
+                
+                console.log(error);
             }
 
         } catch (error) {
