@@ -4,8 +4,8 @@ Aplicación MERN desarrollada con create-react-app para el proyecto final de la 
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](https://imagesupload.net/image/aZkt)
-![Captura de Pantalla 2](https://imagesupload.net/image/ad8B)
+![Captura de Pantalla 1] (https://imagesupload.net/image/aZkt)
+![Captura de Pantalla 2] (https://imagesupload.net/image/ad8B)
 
 ## Tecnologías Utilizadas
 
