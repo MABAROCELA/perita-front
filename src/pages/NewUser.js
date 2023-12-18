@@ -29,9 +29,8 @@ function NewUser() {
                 });
 
             if (response.status === 200) {
-
-                console.log(response);
                 alert('Usuario creado con exito');
+                console.log(response);
                 navigate('/users/login');
 
                 setUsername('');
