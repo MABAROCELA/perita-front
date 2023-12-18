@@ -1,0 +1,8 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .home-carrousel {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../assets/background.png')
+  }
+  }

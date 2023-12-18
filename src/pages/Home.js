@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 
-import '../css/App.css'
+import '../css/Home.css'
 
 function Home() {
     
@@ -20,23 +20,23 @@ function Home() {
     };
 
     return (
-        <Carousel className="mx-1" fade activeIndex={index} onSelect={handleSelect} interval={1300}>
-            <Carousel.Item >
+        <Carousel className="mx-1 home-carrousel" fade activeIndex={index} onSelect={handleSelect} interval={1300}>
+            <Carousel.Item className="carrousel-item" >
                 <Link to="/ListaProductos"><Image src={Foto0} className="d-block w-100" text="Cover" alt="fcover" /></Link>
             </Carousel.Item>
-            <Carousel.Item >
+            <Carousel.Item className="carrousel-item" >
                 <Image src={Foto1} className="d-block w-100" text="First slide" alt="first-slide" />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="carrousel-item" > 
                 <Image src={Foto2} className="d-block w-100" text="Second slide" alt="second-slide" />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="carrousel-item" >
                 <Image src={Foto3} className="d-block w-100" text="Third slide" alt="third-slide" />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="carrousel-item" >
                 <Image src={Foto4} className="d-block w-100" text="Fourth slide" alt="fourth-slide" />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="carrousel-item" >
                 <Image src={Foto5} className="d-block w-100" text="Fifth slide" alt="fifth-slide" />
             </Carousel.Item>
         </Carousel>
