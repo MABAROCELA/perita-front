@@ -8,7 +8,7 @@ const ApiClima = () => {
   const [temperature, setTemperature] = useState('');
   const [weatherDescription, setWeatherDescription] = useState('');
   const [weatherIcon, setWeatherIcon] = useState('');
-const apiKey = process.env.REACT_APP_API_KEY;
+const apiKey = process.env.REACT_APP_API_KEY || '20c22ef6650cb4f6045118d003085664';
 
   useEffect(() => {
     const fetchWeatherData = async () => {
