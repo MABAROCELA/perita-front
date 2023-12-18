@@ -10,7 +10,7 @@ function Navibar() {
         <>
             <Navbar sticky="top" className="bg-body-primary bg-white justify-content-evenly">
                 <Container fluid>
-                    <Navbar.Brand>
+                    <Navbar.Brand className='logo-perita'>
                         <img
                             src={ Logo }
                             alt="Perita"

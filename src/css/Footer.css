@@ -52,7 +52,7 @@ a:hover {
     min-width: 12.5rem;
 }
 
-@media only screen and (min-width: 29.8125rem) {
+@media only screen and (min-width: 447px) {
     
 .footer-ul {
     list-style: none;
@@ -63,7 +63,7 @@ a:hover {
     }
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 768px) {
     .ft-main {
         justify-content: space-between;
     }
@@ -74,7 +74,7 @@ a:hover {
 }
 }
 
-@media only screen and (min-width: 77.5rem) {
+@media only screen and (min-width: 1240px) {
     .ft-main {
         justify-content: space-evenly;
     }
@@ -135,12 +135,14 @@ form {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .ft-main {
+    .footer-body {
         display: flex;
-        flex-direction: row;
-        columns: 2;
+        flex-direction: column ;
         flex-wrap: wrap;
+        columns: 2;
         justify-content: space-around;
+        align-items: center;
+        align-self: center
     }
 
     .ft-main-item {
