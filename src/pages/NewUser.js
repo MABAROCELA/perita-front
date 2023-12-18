@@ -108,7 +108,7 @@ function NewUser() {
                             <button
                                 className="register-button"
                                 type="submit"
-                                onClick={handleSubmit}>
+                                >
                                 Registrarse
                             </button>
                         </div>
