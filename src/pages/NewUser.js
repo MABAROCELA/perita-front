@@ -27,6 +27,8 @@ function NewUser() {
                     email
                 });
 
+                console.log('Respuesta del servidor:', response);
+
             if (response.status === 200) {
                 console.log('Usuario creado con exito');
                 alert('Usuario creado con exito');
