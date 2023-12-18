@@ -138,6 +138,7 @@ form {
     .ft-main {
         display: flex;
         flex-direction: row;
+        columns: 2;
         flex-wrap: wrap;
         justify-content: space-around;
     }

@@ -22,10 +22,21 @@ Button {
     margin: auto;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
+
     .saludo {
-        font-size: .5rem;
         overflow: hidden;
+        height: 50px;
+    }
+
+    .session-name {
+        font-size: .625rem;
+    }
+
+    .session-button {
+        font-size: .5rem;
+        width: auto;
+        height: auto;
     }
 
     .linkbarContainer {

@@ -59,8 +59,8 @@ function Linkbar() {
                             <Link to="/ListaProductos" className="enlace">VER COLECCIÓN</Link>
                         </Nav.Item>
                         <div className="saludo">
-                            <p>Hola, {user.username}</p>
-                            <Button variant="light" size="sm" onClick={handleLogout}>
+                            <p className='session-name'>Hola, {user.username}</p>
+                            <Button className='session-button' variant="light" size="sm" onClick={handleLogout}>
                                 Cerrar sesión
                             </Button>
                         </div>
@@ -79,8 +79,8 @@ function Linkbar() {
                             <Link eventkey="disabled" disabled className="enlace">MI CARRITO</Link>
                         </Nav.Item>
                         <div className="saludo">
-                            <p>Hola, {user.username}</p>
-                            <Button variant="light" size="sm" onClick={handleLogout}>
+                            <p className="session-name">Hola, {user.username}</p>
+                            <Button className="session-button" variant="light" size="sm" onClick={handleLogout}>
                                 Cerrar sesión
                             </Button>
                         </div>

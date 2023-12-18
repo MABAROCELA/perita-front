@@ -38,3 +38,10 @@
     color: #ffffff;
     font-weight: bold;
 }
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .adminButton{
+        font-size: .625rem;
+    }
+}
