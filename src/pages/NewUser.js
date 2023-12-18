@@ -10,8 +10,6 @@ function NewUser() {
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
 
-    console.log(error);
-
     const navigate = useNavigate();
 
     const handleSubmit = async () => {
