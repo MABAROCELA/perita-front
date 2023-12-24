@@ -22,7 +22,7 @@ function Home() {
     return (
         <Carousel className="mx-1 home-carrousel" fade activeIndex={index} onSelect={handleSelect} interval={1300}>
             <Carousel.Item className="carrousel-item" >
-                <Link to="/Login"><Image src={Foto0} className="d-block w-100" text="Cover" alt="fcover" /></Link>
+                <Link to="/users/login"><Image src={Foto0} className="d-block w-100" text="Cover" alt="fcover" /></Link>
             </Carousel.Item>
             <Carousel.Item className="carrousel-item" >
                 <Image src={Foto1} className="d-block w-100" text="First slide" alt="first-slide" />
